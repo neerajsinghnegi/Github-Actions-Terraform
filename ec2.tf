@@ -8,8 +8,9 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
-  profile = "default"
+  aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  region: "ap-south-1"
 }
 
 resource "aws_instance" "instance1" {
