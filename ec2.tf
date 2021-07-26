@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 terraform {
-  resource "aws_instance" "app_server" {
+  resource "aws_instance" "instance1" {
   ami           = "ami-0ad704c126371a549"
   instance_type = "t2.micro"
 
