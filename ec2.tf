@@ -7,11 +7,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  profile = "neeraj"
-  region: "ap-south-1"
-}
-
 resource "aws_instance" "instance1" {
   ami           = "ami-0ad704c126371a549"
   instance_type = "t2.micro"
