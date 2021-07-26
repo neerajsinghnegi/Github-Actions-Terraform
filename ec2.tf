@@ -8,8 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  profile = "neeraj"
   region: "ap-south-1"
 }
 
